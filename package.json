@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "CV",
   "version": "1.0.0",
   "description": "HTML template",
@@ -7,11 +8,22 @@
     "dev": "webpack --mode development",
     "build-only": "webpack --mode production",
     "build": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
+=======
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "build-and-beautify": "del-cli dist && webpack --mode production && html dist/*.html --indent-size 2",
+>>>>>>> e8498ebf54a08a25f4e6f85d760878a29842b570
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open",
     "beautify": "html dist/*.html --indent-size 2",
     "clear": "del-cli dist"
   },
+<<<<<<< HEAD
   "dependencies": {
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
@@ -36,5 +48,36 @@
     "webpack": "^4.25.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
+=======
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayalintu/CV.git"
+  },
+  "author": "kaya.lintu@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kayalintu/CV/issues"
+  },
+  "homepage": "https://github.com/kayalintu/CV#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.1.0",
+    "del-cli": "^1.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-cli": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.11.0",
+    "raw-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "typed.js": "^2.0.9"
+>>>>>>> e8498ebf54a08a25f4e6f85d760878a29842b570
   }
 }

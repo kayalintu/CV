@@ -22,9 +22,7 @@ body {
   .content {
     grid-area: content;
   }
-  footer {
-    grid-area: 
-  }
+
   .link {
     color: rgba(255, 255, 255, 0.7);
     font-size: 13px;
@@ -35,3 +33,9 @@ body {
     padding: 12px 0;
   }
 }
+
+@import "reset.css";
+@import "common.scss";
+
+@import "header.scss";
+
