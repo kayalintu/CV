@@ -4,12 +4,19 @@
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
 
-<div class="container">
-    <!--<h1 id="typed"></h1>-->
-    <section class="pt-page about-me" id="about-me">111</section>
-    <section class="pt-page skills" id="skills">222</section>
-    <section class="pt-page contacts" id="contacts">333</section>
-
+<div class="content">
+    <section class="section active home" id="home">
+        <div class="name">
+            <span id="typed"></span>
+        </div>
+    </section>
+    <section class="section about-me" id="about-me">
+        <div class="container">
+            222
+        </div>
+    </section>
+    <section class="section skills" id="skills">333</section>
+    <section class="section contacts" id="contacts">444</section>
 </div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>

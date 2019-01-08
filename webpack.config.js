@@ -73,10 +73,7 @@ module.exports = {
             filename: './css/style.bundle.css',
             allChunks: true,
         }),
-        new CopyWebpackPlugin([{
-            from: './src/fonts',
-            to: './fonts'
-        },
+        new CopyWebpackPlugin([
             {
                 from: './src/favicon',
                 to: './favicon'

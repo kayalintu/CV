@@ -1,0 +1,18 @@
+.home {
+  background-image: url("/uploads/home.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  .name {
+    display: flex;
+    justify-content: center;
+    margin: 25% 0;
+    span {
+      font-size: 34px;
+      font-family: $font-main;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+}
