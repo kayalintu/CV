@@ -14,7 +14,7 @@
     }
     .logo {
         width: 100px;
-        background-image: url(/../uploads/ava.jpg);
+        background-image: url(../uploads/ava.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -75,21 +75,21 @@
         }
     }
     .facebook {
-        background-image: url('/../img/facebook.png');
+        background-image: url('../img/facebook.png');
         &:hover {
-            background-image: url('/../img/facebook-color.png');
+            background-image: url('../img/facebook-color.png');
         }
     }
     .instagram {
-        background-image: url('/../img/instagram.png');
+        background-image: url('../img/instagram.png');
         &:hover {
-            background-image: url('/../img/instagram-color.png');
+            background-image: url('../img/instagram-color.png');
         }
     }
     .linkedin {
-        background-image: url('/../img/linkedin.png');
+        background-image: url('../img/linkedin.png');
         &:hover {
-            background-image: url('/../img/linkedin-color.png');
+            background-image: url('../img/linkedin-color.png');
         }
     }
     .copyrights {
