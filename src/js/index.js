@@ -1,4 +1,5 @@
 import Typed from 'typed.js';
+import particles from 'particles.js';
 
 /**
  * For home page animated words
@@ -32,31 +33,21 @@ nav.forEach(element => {
     });
 });
 
-
+// document.querySelectorAll('.li').forEach(li => {
+//     li.addEventListener('click', (e) => {
+//         const item = e.target.closest('li.li');
 //
-// const navs = document.querySelectorAll("[data-nav]");
-// const location = window.location;
-//
-// function setActive(link, {pathname, href}, parent = "false", activeClass ="active") {
-//     const active = (href.indexOf(link.getAttribute("href")) != -1 && link.getAttribute("href") !== '/') || (link.getAttribute("href") === pathname);
-//     let classElement = link;
-//     if (parent && link.parentElement) {
-//         classElement = link.parentElement;
-//     };
-//     if (!active) {
-//         classElement.classList.remove(activeClass);
-//         return;
-//     }
-//
-//     classElement.classList.add(activeClass);
-// }
-//
-// navs.forEach((nav) => {
-//     const links = nav.querySelectorAll('a');
-//     links.forEach(a => setActive(a, location, true));
+//         if (!item) {
+//             return;
+//         }
+//         item.classList.toggle('active-nav');
+//     });
 // });
 
-import particles from 'particles.js';
+
+/**
+ * particlesJS
+ */
 
 particlesJS("particles-js", {
     "particles": {
