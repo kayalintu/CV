@@ -1,41 +1,6 @@
-$font-stack: -apple-system, BlinkMacSystemFont,Roboto,'Open Sans','Helvetica Neue',sans-serif;
-
-@import "~bootstrap/scss/bootstrap";
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/Roboto-Regular.ttf);
-}
-
-body {
-  display: grid;
-  grid-template-areas: 
-    "header"
-    "content"
-    "footer";
-  font-family: $font-stack;
-  header {
-    grid-area: header;
-  }
-  .content {
-    grid-area: content;
-  }
-
-  .link {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 1;
-    text-transform: uppercase;
-    display: block;
-    padding: 12px 0;
-  }
-}
-
 @import "reset.css";
-@import "common.scss";
 
-@import "header.scss";
+@import 'common.scss';
+@import 'header.scss'
+
 
