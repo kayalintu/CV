@@ -1,13 +1,17 @@
 .home {
-  background-image: url("/uploads/home.jpg");
-  background-size: 100%;
+  background: url("/uploads/home.jpg");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  position:fixed;
+  top:0;
+  left:0;
+  min-width:100%;
+  min-height:100%;
   .name {
-    display: flex;
-    justify-content: center;
-    margin: 25% 0;
+    position: absolute;
+    top: 50%;
+    left: 42%;
     span {
       font-size: 34px;
       font-family: $font-main;
