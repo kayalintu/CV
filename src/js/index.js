@@ -1,5 +1,4 @@
 import Typed from 'typed.js';
-import particles from 'particles.js';
 
 /**
  * For home page animated words
@@ -20,18 +19,20 @@ let nav = document.querySelectorAll('.links');
 
 nav.forEach(element => {
     element.addEventListener('click', (e) => {
-    const sectionClass = e.target.getAttribute("href").replace('#', '');
-document.querySelectorAll('.section').forEach(t => {
-    t.classList.remove('active');
-});
-const section = document.querySelector(`.${sectionClass}`);
+        const sectionClass = e.target.getAttribute("href").replace('#', '');
+        document.querySelectorAll('.section').forEach(t => {
+            t.classList.remove('active');
+        });
+        const section = document.querySelector(`.${sectionClass}`);
 
-if (!section) {
-    return;
-}
-section.classList.toggle('active');
+        if (!section) {
+            return;
+        }
+        section.classList.toggle('active');
+    });
 });
-});
+
+
 //
 // const navs = document.querySelectorAll("[data-nav]");
 // const location = window.location;
@@ -54,6 +55,8 @@ section.classList.toggle('active');
 //     const links = nav.querySelectorAll('a');
 //     links.forEach(a => setActive(a, location, true));
 // });
+
+import particles from 'particles.js';
 
 particlesJS("particles-js", {
     "particles": {
