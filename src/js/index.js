@@ -33,16 +33,16 @@ nav.forEach(element => {
     });
 });
 
-// document.querySelectorAll('.li').forEach(li => {
-//     li.addEventListener('click', (e) => {
-//         const item = e.target.closest('li.li');
-//
-//         if (!item) {
-//             return;
-//         }
-//         item.classList.toggle('active-nav');
-//     });
-// });
+document.querySelectorAll('.li').forEach(li => {
+    li.addEventListener('click', (e) => {
+        const item = e.target.closest('li.li');
+
+        if (!item) {
+            return;
+        }
+        item.classList.toggle('active-nav');
+    });
+});
 
 
 /**
