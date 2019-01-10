@@ -33,17 +33,19 @@ nav.forEach(element => {
     });
 });
 
-document.querySelectorAll('.li').forEach(li => {
-    li.addEventListener('click', (e) => {
-        const item = e.target.closest('li.li');
-
-        if (!item) {
-            return;
+/**
+ * change active nav li
+ */
+let li = document.querySelectorAll('.li');
+for (let i = 0; i < li.length; i++) {
+    li[i].onclick = function() {
+        let a = 0;
+        while (a < li.length) {
+            li[a++].className = 'li';
         }
-        item.classList.toggle('active-nav');
-    });
-});
-
+        li[i].className = 'li active-nav';
+    };
+}
 
 /**
  * particlesJS
@@ -180,3 +182,43 @@ update = function() {
     requestAnimationFrame(update);
 };
 requestAnimationFrame(update);
+
+/**
+ * Form validation
+ */
+let submit = document.getElementById('submit');
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+let nameError = document.getElementById('nameError');
+let emailError = document.getElementById('emailError');
+
+
+submit.addEventListener('click', function validate() {
+    let isValid = true;
+    let yourName = name.value;
+    let yourEmail = email.value;
+    let mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+    name.classList.remove('is-danger');
+    nameError.classList.add('hide');
+    email.classList.remove('is-danger');
+    emailError.classList.add('hide');
+
+    if (yourName == '' || yourName.length < 2 || yourName > 15 || yourName.typeOf === 'number'){
+        name.classList.add('is-danger');
+        nameError.classList.remove('hide');
+        isValid &=false;
+    }
+
+    if (!yourEmail.match(mailformat) || yourEmail == '') {
+        email.classList.add('is-danger');
+        emailError.classList.remove('hide');
+        isValid &=false;
+    }
+    if (!isValid) {
+        event.preventDefault();
+    }
+
+    return !isValid;
+
+});

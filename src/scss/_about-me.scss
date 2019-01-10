@@ -1,0 +1,80 @@
+.about-me {
+  background-color: #fff;
+  margin: 15px 0 15px 15px;
+  .title-block {
+    margin-bottom: 30px;
+    h2 {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $gray;
+      font-size: 28px;
+      font-family: $font-main;
+      color: $main-color;
+      margin-bottom: 15px;
+    }
+    p {
+      text-align: right;
+      color: #888;
+      font-size: 14px;
+      font-family: $font-main;
+    }
+  }
+  .text-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: self-start;
+  }
+  .about {
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+  .personality {
+    li {
+      margin-bottom: 15px;
+    }
+    p {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: 500;
+    }
+    span {
+      font-family: $font-main;
+      color: $main-color;
+      padding-bottom: 2px;
+      display: inline-block;
+      font-size: 14px;
+    }
+  }
+  .timeline-item {
+    display: flex;
+    width: 100%;
+    position: relative;
+  }
+  .left-part {
+    width: 20%;
+    text-align: right;
+    margin-right: 40px;
+  }
+  .right-part {
+    width: 80%;
+  }
+  .divider {
+    position: absolute;
+    top: 0;
+    left: 21%;
+    bottom: 0;
+    width: 1px;
+    background-color: $gray;
+    &:after {
+      content: '';
+      display: block;
+      margin-top: 7px;
+      width: 8px;
+      height: 8px;
+      margin-left: -5px;
+      border-radius: 5px;
+      border: 2px solid $amazing-color;
+      background-color: #fff;
+    }
+  }
+}

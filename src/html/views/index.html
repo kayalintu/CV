@@ -13,11 +13,133 @@
     </section>
     <section class="section about-me" id="about-me">
         <div class="container">
-            222
+            <div class="title-block">
+                <h2>About Me</h2>
+                <p>CSS is awesome</p>
+            </div>
+            <div class="text-block">
+                <div class="about">
+                    <h3>Summary</h3>
+                    <p>2 years' experience in Frontend development. Participation in several projects in the same time,
+                        fulfillment of tasks according to priorities. Participation in the assessment of tasks, their
+                        implementation in the framework. Communication with the customer, specification of requirements.
+                        The role of Scrum Master, facilitation of meetings, coordination within the team.</p>
+                </div>
+                <ul class="personality">
+                    <li class="line">
+                        <p>Age </p><span>I'm always 21</span>
+                    </li>
+                    <li class="line">
+                        <p>Email </p><span>kaya.lintu@gmail.com</span>
+                    </li>
+                    <li class="line">
+                        <p>Skype </p><span>kaya.lintu</span>
+                    </li>
+                    <li class="line">
+                        <p>Github </p><span></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="timeline">
+                <h3>Experience</h3>
+                <div class="timeline-item">
+                    <div class="left-part">
+                        <h4 class="item-period">2016 - Current</h4>
+                        <span class="item-company">Google</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="left-part">
+                        <h4 class="item-period">2016 - Current</h4>
+                        <span class="item-company">Google</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="left-part">
+                        <h4 class="item-period">2016 - Current</h4>
+                        <span class="item-company">Google</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline">
+                <h3>Education</h3>
+                <div class="timeline-item">
+                    <div class="left-part">
+                        <h4 class="item-period">2016 - Current</h4>
+                        <span class="item-company">Google</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="left-part">
+                        <h4 class="item-period">2016 - Current</h4>
+                        <span class="item-company">Google</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="left-part">
+                        <h4 class="item-period">2016 - Current</h4>
+                        <span class="item-company">Google</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="right-part">
+                        <h4 class="item-title">Lead Ui/Ux Designer</h4>
+                        <p>Praesent dignissim sollicitudin justo, sed elementum quam lacinia quis. Phasellus eleifend tristique posuere. Sed vitae dui nec magna.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="section skills" id="skills">333</section>
-    <section class="section contacts" id="contacts">444</section>
+    <section class="section contacts" id="contacts">
+        <div class="container">
+            <form class="card card-content message is-dark" name="signUp" method="" action="">
+                <div class="content is-medium">
+                    <h3>Registration</h3>
+                </div>
+                <div class="field">
+                    <label class="label">Your name</label>
+                    <div class="control">
+                        <input class="input" id="name" type="text" placeholder="Your name" required>
+                        <p class="help is-danger hide" id="nameError">Type your name</p>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Your e-mail</label>
+                    <div class="control">
+                        <input class="input" id="email" type="email" placeholder="Your e-mail" required>
+                        <p class="help is-danger hide" id="emailError">This email is invalid</p>
+                    </div>
+                </div>
+                <button class="button is-primary" id="submit" value="Go!">Go!</button>
+            </form>
+        </div>
+    </section>
 </div>
 
 <%= _.template(require('./../includes/footer.html'))(data) %>
