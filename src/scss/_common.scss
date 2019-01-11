@@ -26,6 +26,7 @@ p {
   height: 100%;
   padding: 30px;
   background-color: #fff;
+  margin: 15px 0 15px 15px;
 }
 
 .container {
@@ -33,10 +34,10 @@ p {
 }
 
 .active {
-  visibility: visible !important;
+  display: block !important;
 }
 .section {
-  visibility: hidden;
+  display: none;
 }
 .line {
   display:inline-block;
@@ -51,4 +52,21 @@ p {
 }
 .line:hover:after {
   transform: scaleX(1);
+}
+.title-block {
+  margin-bottom: 30px;
+  h2 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $gray;
+    font-size: 28px;
+    font-family: $font-main;
+    color: $main-color;
+    margin-bottom: 15px;
+  }
+  p {
+    text-align: right;
+    color: #888;
+    font-size: 14px;
+    font-family: $font-main;
+  }
 }
