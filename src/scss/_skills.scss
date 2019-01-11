@@ -1,0 +1,76 @@
+.skills {
+  position: absolute;
+  top: 0;
+  margin: 15px 0 15px 15px;
+  width: 100%;
+
+  #skill {
+    max-width: 600px;
+    margin: 0;
+    position: relative;
+    line-height: 1em;
+  }
+
+  #skill li {
+    height: 10px;
+    width: 600px;
+    margin: 15px 0;
+  }
+
+  #skill li h3 {
+    position: relative;
+    top: -25px;
+  }
+
+  .bar {
+    display: inline-block;
+    border-radius: 3px;
+    height: 10px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    transition: width .4s ease-in-out;
+  }
+
+  .html-css {
+    width: 90%;
+    background-color: #f674a4;
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+            transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+            transparent 75%, transparent);
+    animation: html-css 3s linear;
+  }
+
+
+  .js {
+    width: 30%;
+    background-color: #a1ce5b;
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%,
+            transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%,
+            transparent 75%, transparent);
+    animation: js 3s linear;
+  }
+
+  @keyframes html-css {
+    0% {
+      background-position: 0 0;
+      width:0px;
+    }
+    100% {
+      background-position: 60px 0;
+      width: 90%;
+    }
+  }
+
+  @keyframes js {
+    0% {
+      background-position: 0 0;
+      width:0px;
+    }
+    100% {
+      background-position: 60px 0;
+      width: 30%;
+    }
+  }
+
+}
