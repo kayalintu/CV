@@ -131,11 +131,11 @@
     </section>
     <section class="section contacts" id="contacts">
         <div class="container">
+            <div class="title-block">
+                <h2>You can write me a smth...</h2>
+                <p>This form was created with validation, only for testing my skills.</p>
+            </div>
             <form class="" name="" method="" action="">
-                <div class="title-block">
-                    <h2>You can write me a smth...</h2>
-                    <p>This form was created with validation, only for testing my skills.</p>
-                </div>
                 <div class="field">
                     <label class="label">Your name</label>
                     <div class="control">
@@ -149,6 +149,11 @@
                     <div class="control">
                         <input class="input" id="email" type="email" placeholder="Your e-mail" required>
                         <p class="help is-danger hide" id="emailError">This email is invalid</p>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <textarea class="input" id="textarea" type="text" placeholder="Type smth..." required></textarea>
                     </div>
                 </div>
                 <button class="button is-primary" id="submit" value="Go!">Go!</button>
