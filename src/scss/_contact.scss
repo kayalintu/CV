@@ -32,8 +32,16 @@
       border: 1px solid $gray;
       padding: 15px 90px;
       text-decoration: none;
-      display: block;
       cursor: pointer;
+      position: relative;
+      vertical-align: middle;
+      display: inline-block;
+      transition: 0.5s;
+      -webkit-transition:0.5s;
+      &:hover {
+        box-shadow: inset 0 0 0 5px $amazing-color;
+      }
+
     }
     .icon {
       background-size: cover;
