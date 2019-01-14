@@ -224,5 +224,5 @@ submit.addEventListener('click', function validate() {
 });
 
 /**
- * Progress bar for skills
+ * Progress bar for skills (todo)
  */
